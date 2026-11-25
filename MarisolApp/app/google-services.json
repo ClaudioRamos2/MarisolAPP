@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "48036176337",
+    "project_id": "marisol-app-ba34d",
+    "storage_bucket": "marisol-app-ba34d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48036176337:android:12b3a7e32bdbb721e580f0",
+        "android_client_info": {
+          "package_name": "com.example.marisolapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNUmWcAEdkTcgQJuDGypfib0yLKLAwD2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

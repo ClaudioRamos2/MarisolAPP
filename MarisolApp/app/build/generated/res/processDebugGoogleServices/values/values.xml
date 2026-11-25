@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">48036176337</string>
+    <string name="google_api_key" translatable="false">AIzaSyCNUmWcAEdkTcgQJuDGypfib0yLKLAwD2c</string>
+    <string name="google_app_id" translatable="false">1:48036176337:android:12b3a7e32bdbb721e580f0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCNUmWcAEdkTcgQJuDGypfib0yLKLAwD2c</string>
+    <string name="google_storage_bucket" translatable="false">marisol-app-ba34d.firebasestorage.app</string>
+    <string name="project_id" translatable="false">marisol-app-ba34d</string>
+</resources>
