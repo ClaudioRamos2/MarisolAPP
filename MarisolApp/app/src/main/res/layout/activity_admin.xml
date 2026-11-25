@@ -10,22 +10,22 @@
 
     <Button
         android:id="@+id/btnIngresar2"
-        android:layout_width="285dp"
-        android:layout_height="85dp"
+        android:layout_width="281dp"
+        android:layout_height="83dp"
         android:backgroundTint="#3D405B"
         android:text="GESTIONAR PRODUCTOS"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433" />
+        app:layout_constraintVertical_bias="0.429" />
 
     <Button
         android:id="@+id/btnIngresar3"
-        android:layout_width="287dp"
-        android:layout_height="75dp"
+        android:layout_width="282dp"
+        android:layout_height="77dp"
         android:backgroundTint="#FF8500"
         android:text="GESTIONAR SERVICIOS"
         app:cornerRadius="20dp"
