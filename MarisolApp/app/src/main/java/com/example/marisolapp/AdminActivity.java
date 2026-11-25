@@ -10,6 +10,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.Firebase;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class AdminActivity extends AppCompatActivity {
 
     @Override
@@ -25,9 +28,9 @@ public class AdminActivity extends AppCompatActivity {
     }
 
     public void cerrar(View view) {
+        FirebaseAuth.getInstance().signOut();
         Intent cerrar = new Intent(this, LoginActivity.class);
         startActivity(cerrar);
-
-
+        finish();
     }
 }

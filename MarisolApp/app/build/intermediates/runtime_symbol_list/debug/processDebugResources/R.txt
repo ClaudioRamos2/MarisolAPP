@@ -3735,6 +3735,8 @@ int drawable btn_radio_off_mtrl 0x7f07007e
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f07007f
 int drawable btn_radio_on_mtrl 0x7f070080
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070081
+int drawable caja 0x7f070142
+int drawable cerrar 0x7f070143
 int drawable common_full_open_on_phone 0x7f070082
 int drawable common_google_signin_btn_icon_dark 0x7f070083
 int drawable common_google_signin_btn_icon_dark_focused 0x7f070084
@@ -3788,6 +3790,7 @@ int drawable ic_other_sign_in 0x7f0700b3
 int drawable ic_passkey 0x7f0700b4
 int drawable ic_password 0x7f0700b5
 int drawable ic_search_black_24 0x7f0700b6
+int drawable impresora 0x7f070144
 int drawable logo 0x7f0700b7
 int drawable m3_action_bar_item_background 0x7f0700b8
 int drawable m3_avd_hide_password 0x7f0700b9
@@ -4039,8 +4042,11 @@ int id browser_actions_menu_item_icon 0x7f08006c
 int id browser_actions_menu_item_text 0x7f08006d
 int id browser_actions_menu_items 0x7f08006e
 int id browser_actions_menu_view 0x7f08006f
+int id btnCerrar 0x7f08022b
 int id btnIngresar 0x7f080070
+int id btnProductos 0x7f08022c
 int id btnRegresar 0x7f080071
+int id btnServicios 0x7f08022d
 int id button 0x7f080072
 int id buttonPanel 0x7f080073
 int id cache_measures 0x7f080074
@@ -4172,6 +4178,7 @@ int id ifRoom 0x7f0800f1
 int id ignore 0x7f0800f2
 int id ignoreRequest 0x7f0800f3
 int id image 0x7f0800f4
+int id imageView 0x7f08022e
 int id imageView2 0x7f0800f5
 int id imageView4 0x7f0800f6
 int id imageView5 0x7f0800f7
@@ -4424,6 +4431,8 @@ int id textSpacerNoTitle 0x7f0801ed
 int id textStart 0x7f0801ee
 int id textTop 0x7f0801ef
 int id textView 0x7f0801f0
+int id textView4 0x7f08022f
+int id textView5 0x7f080230
 int id text_input_end_icon 0x7f0801f1
 int id text_input_error_icon 0x7f0801f2
 int id text_input_start_icon 0x7f0801f3

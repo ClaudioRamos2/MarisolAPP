@@ -1,4 +1,4 @@
-#Tue Nov 24 23:14:41 CST 2026
+#Wed Nov 25 17:15:59 CST 2026
 base.0=C\:\\Users\\RAMOS\\OneDrive\\Documents\\GitHub\\MarisolAPP\\MarisolApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\RAMOS\\OneDrive\\Documents\\GitHub\\MarisolAPP\\MarisolApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\RAMOS\\OneDrive\\Documents\\GitHub\\MarisolAPP\\MarisolApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
