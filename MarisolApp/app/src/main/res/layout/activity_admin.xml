@@ -9,12 +9,33 @@
     tools:context=".AdminActivity">
 
     <Button
-        android:id="@+id/btnIngresar2"
+        android:id="@+id/btnCerrar"
+        android:layout_width="264dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#003D405B"
+        android:text="CERRAR SESIÓN"
+        android:textColor="#3D405B"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/cerrar"
+        app:iconGravity="textStart"
+        app:iconSize="30dp"
+        app:iconTint="#3D405B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <Button
+        android:id="@+id/btnProductos"
         android:layout_width="281dp"
         android:layout_height="83dp"
         android:backgroundTint="#3D405B"
         android:text="GESTIONAR PRODUCTOS"
         app:cornerRadius="20dp"
+        app:icon="@drawable/caja"
+        app:iconSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
@@ -23,12 +44,14 @@
         app:layout_constraintVertical_bias="0.429" />
 
     <Button
-        android:id="@+id/btnIngresar3"
+        android:id="@+id/btnServicios"
         android:layout_width="282dp"
         android:layout_height="77dp"
         android:backgroundTint="#FF8500"
         android:text="GESTIONAR SERVICIOS"
         app:cornerRadius="20dp"
+        app:icon="@drawable/impresora"
+        app:iconSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:text="Marisol App cátolog digtal"
+        android:text="Marisol App cátologo digital"
         android:textColor="#FF8500"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
