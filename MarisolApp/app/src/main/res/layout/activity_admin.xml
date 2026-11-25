@@ -13,6 +13,7 @@
         android:layout_width="264dp"
         android:layout_height="64dp"
         android:backgroundTint="#003D405B"
+        android:onClick="cerrar"
         android:text="CERRAR SESIÓN"
         android:textColor="#3D405B"
         app:cornerRadius="20dp"
