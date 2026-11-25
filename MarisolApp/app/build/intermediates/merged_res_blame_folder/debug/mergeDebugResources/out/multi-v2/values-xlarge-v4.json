@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.marisolapp-mergeDebugResources-46:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.example.marisolapp-mergeDebugResources-51:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\RAMOS\\.gradle\\caches\\9.6.0\\transforms\\9ddffe69c0e782d7225bf67494e67092\\transformed\\appcompat-1.8.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "C:\\Users\\RAMOS\\.gradle\\caches\\9.6.0\\transforms\\daa0dfbcaacf2f67290bb3e8da97eac7\\transformed\\appcompat-1.8.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

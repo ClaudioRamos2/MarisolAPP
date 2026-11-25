@@ -2,11 +2,23 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+drawable fondologin
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id btn_PruebaAdmin
+drawable logo
+drawable password
+drawable regresar
+drawable user
+id btnIngresar
+id btnRegresar
 id button
+id imageView2
+id imageView4
+id imageView5
 id main
+id textView
+id txtPassword
+id txtUsuario
 layout activity_admin
 layout activity_gestion_productos
 layout activity_gestion_servicios

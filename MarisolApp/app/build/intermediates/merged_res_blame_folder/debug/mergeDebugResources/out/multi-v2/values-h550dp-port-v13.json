@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.marisolapp-mergeDebugResources-46:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.example.marisolapp-mergeDebugResources-51:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\RAMOS\\.gradle\\caches\\9.6.0\\transforms\\4e21b183d43c0b22f9e5bdfba3997bc6\\transformed\\material-1.14.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\RAMOS\\.gradle\\caches\\9.6.0\\transforms\\bdc02990963aad74527947f13a0e77df\\transformed\\material-1.14.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
