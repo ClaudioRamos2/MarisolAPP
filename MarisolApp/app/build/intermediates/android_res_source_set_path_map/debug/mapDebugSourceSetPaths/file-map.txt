@@ -1,9 +1,0 @@
-com.example.marisolapp-pngs-0 E:\Progra_Movil_1\III_Parcial\MarisolAPP\MarisolApp\app\build\generated\res\pngs\debug
-com.example.marisolapp-res-1 E:\Progra_Movil_1\III_Parcial\MarisolAPP\MarisolApp\app\build\generated\res\processDebugGoogleServices
-com.example.marisolapp-updated_navigation_xml-2 E:\Progra_Movil_1\III_Parcial\MarisolAPP\MarisolApp\app\build\generated\updated_navigation_xml\debug
-com.example.marisolapp-packageDebugResources-3 E:\Progra_Movil_1\III_Parcial\MarisolAPP\MarisolApp\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.marisolapp-packageDebugResources-4 E:\Progra_Movil_1\III_Parcial\MarisolAPP\MarisolApp\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.marisolapp-debug-5 E:\Progra_Movil_1\III_Parcial\MarisolAPP\MarisolApp\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.marisolapp-debug-6 E:\Progra_Movil_1\III_Parcial\MarisolAPP\MarisolApp\app\src\debug\res
-com.example.marisolapp-main-7 E:\Progra_Movil_1\III_Parcial\MarisolAPP\MarisolApp\app\src\main\res
-gradleHome-0 C:\Users\jorge\.gradle
