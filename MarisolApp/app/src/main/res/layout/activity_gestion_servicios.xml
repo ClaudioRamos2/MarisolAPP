@@ -5,15 +5,190 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF1DC"
     tools:context=".GestionServiciosActivity">
 
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
+        android:id="@+id/headerServicios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnRegresarServicios"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Regresar"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/regresar"
+            app:tint="#3D405B" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Gestión de Servicios"
+                android:textColor="#3D405B"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Papelería Marisol"
+                android:textColor="#FF8500"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFormularioServicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        app:cardBackgroundColor="#FFFFFB"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerServicios">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvModoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-bold"
+                android:text="Nuevo Servicio"
+                android:textColor="#3D405B"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Nombre del servicio (ej. Impresiones a color)"
+                app:boxStrokeColor="#FF8500"
+                app:hintTextColor="#3D405B">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombreServicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:textColor="#3D405B" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Descripción del servicio"
+                app:boxStrokeColor="#FF8500"
+                app:hintTextColor="#3D405B">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescripcionServicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minLines="2"
+                    android:textColor="#3D405B" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnGuardarServicio"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FF8500"
+                    android:text="GUARDAR SERVICIO"
+                    android:textColor="#FFFFFB"
+                    app:cornerRadius="16dp" />
+
+                <Button
+                    android:id="@+id/btnCancelarEdicion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#FFD2A6"
+                    android:text="CANCELAR"
+                    android:textColor="#3D405B"
+                    android:visibility="gone"
+                    app:cornerRadius="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvListaTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Probando"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif-bold"
+        android:text="Servicios Registrados"
+        android:textColor="#3D405B"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardFormularioServicio" />
+
+    <TextView
+        android:id="@+id/tvSinServicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No hay servicios registrados aún."
+        android:textColor="#3D405B"
+        android:textSize="14sp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tvListaTitulo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvServiciosAdmin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvListaTitulo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
