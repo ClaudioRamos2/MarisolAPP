@@ -42,4 +42,16 @@ public class AdminActivity extends AppCompatActivity {
         startActivity(cerrar);
         finish();
     }
+
+    public void productos(View view) {
+        Intent productos = new Intent(this,GestionProductosActivity.class);
+        startActivity(productos);
+        finish();
+    }
+
+    public void servicios(View view) {
+        Intent servicios = new Intent(this,GestionServiciosActivity.class);
+        startActivity(servicios);
+        finish();
+    }
 }
