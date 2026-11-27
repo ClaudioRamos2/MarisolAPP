@@ -1,6 +1,8 @@
 package com.example.marisolapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,18 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button btnVerProductos = findViewById(R.id.btnVerProductos);
+        Button btnVerServicios = findViewById(R.id.btnVerServicios);
+        Button btnAccesoAdmin = findViewById(R.id.btnAccesoAdmin);
+
+        btnVerProductos.setOnClickListener(v ->
+                startActivity(new Intent(this, ProductosActivity.class)));
+
+        btnVerServicios.setOnClickListener(v ->
+                startActivity(new Intent(this, ServiciosActivity.class)));
+
+        btnAccesoAdmin.setOnClickListener(v ->
+                startActivity(new Intent(this, LoginActivity.class)));
     }
 }
