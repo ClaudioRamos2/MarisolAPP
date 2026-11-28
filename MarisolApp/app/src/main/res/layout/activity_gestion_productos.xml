@@ -3,35 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/marisol_cream"
+    android:background="#FFF1DC"
     android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FFF1DC"
         android:orientation="vertical"
-        android:paddingStart="14dp"
-        android:paddingTop="28dp"
-        android:paddingEnd="14dp"
-        android:paddingBottom="14dp">
+        android:paddingStart="16dp"
+        android:paddingTop="32dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="18dp">
 
-        <!-- Encabezado con botón volver -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/marisol_navy"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="12dp">
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp">
 
             <ImageButton
                 android:id="@+id/btnVolverProductos"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Volver"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
                 android:src="?attr/homeAsUpIndicator"
-                app:tint="@color/marisol_white" />
+                app:tint="#3D405B" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -43,18 +45,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
                     android:text="Gestión de Productos"
-                    android:textColor="@color/marisol_white"
-                    android:textSize="19sp"
-                    android:textStyle="bold" />
+                    android:textColor="#3D405B"
+                    android:textSize="21sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:text="Papelería Marisol • Catálogo"
-                    android:textColor="@color/marisol_peach"
-                    android:textSize="11sp" />
+                    android:text="Papelería Marisol"
+                    android:textColor="#FF8500"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
@@ -62,28 +64,28 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            app:cardBackgroundColor="@color/marisol_peach"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="2dp"
-            app:strokeColor="@color/marisol_border"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#FFD2A6"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp"
+            app:strokeColor="#E5C9A8"
             app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="12dp">
+                android:padding="14dp">
 
                 <EditText
                     android:id="@+id/etNombreProducto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/marisol_bg_light"
+                    android:background="#FFF1DC"
                     android:hint="Nombre del producto"
                     android:inputType="textCapWords"
                     android:padding="10dp"
-                    android:textColor="@color/marisol_navy"
+                    android:textColor="#3D405B"
                     android:textColorHint="#7A7E99"
                     android:textSize="14sp" />
 
@@ -92,11 +94,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:background="@color/marisol_bg_light"
+                    android:background="#FFF1DC"
                     android:hint="Categoría (ej. Cuadernos, Escritura, Arte)"
                     android:inputType="textCapWords"
                     android:padding="10dp"
-                    android:textColor="@color/marisol_navy"
+                    android:textColor="#3D405B"
                     android:textColorHint="#7A7E99"
                     android:textSize="14sp" />
 
@@ -113,11 +115,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
                         android:layout_weight="1"
-                        android:background="@color/marisol_bg_light"
+                        android:background="#FFF1DC"
                         android:hint="Precio (L.)"
                         android:inputType="numberDecimal"
                         android:padding="10dp"
-                        android:textColor="@color/marisol_navy"
+                        android:textColor="#3D405B"
                         android:textColorHint="#7A7E99"
                         android:textSize="14sp" />
 
@@ -127,10 +129,10 @@
                         android:layout_height="wrap_content"
                         android:checked="true"
                         android:text="Disponible"
-                        android:textColor="@color/marisol_navy"
+                        android:textColor="#3D405B"
                         android:textSize="12sp"
-                        app:thumbTint="@color/marisol_orange"
-                        app:trackTint="@color/marisol_cream" />
+                        app:thumbTint="#FF8500"
+                        app:trackTint="#FFF1DC" />
                 </LinearLayout>
 
                 <EditText
@@ -138,11 +140,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:background="@color/marisol_bg_light"
+                    android:background="#FFF1DC"
                     android:hint="URL de la imagen del producto"
                     android:inputType="textUri"
                     android:padding="10dp"
-                    android:textColor="@color/marisol_navy"
+                    android:textColor="#3D405B"
                     android:textColorHint="#7A7E99"
                     android:textSize="13sp" />
 
@@ -151,13 +153,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:background="@color/marisol_bg_light"
+                    android:background="#FFF1DC"
                     android:gravity="top"
                     android:hint="Descripción breve del producto"
                     android:inputType="textMultiLine"
                     android:minLines="1"
                     android:padding="10dp"
-                    android:textColor="@color/marisol_navy"
+                    android:textColor="#3D405B"
                     android:textColorHint="#7A7E99"
                     android:textSize="13sp" />
 
@@ -173,9 +175,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="6dp"
                         android:layout_weight="1"
-                        android:backgroundTint="@color/marisol_orange"
+                        android:backgroundTint="#FF8500"
                         android:text="Guardar"
-                        android:textColor="@color/marisol_white"
+                        android:textColor="#FFFFFB"
                         android:textStyle="bold" />
 
                     <Button
@@ -184,9 +186,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
                         android:layout_weight="1"
-                        android:backgroundTint="@color/marisol_navy"
+                        android:backgroundTint="#3D405B"
                         android:text="Limpiar"
-                        android:textColor="@color/marisol_white" />
+                        android:textColor="#FFFFFB" />
                 </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
@@ -197,7 +199,7 @@
             android:layout_marginTop="14dp"
             android:layout_marginBottom="6dp"
             android:text="Productos registrados • Toca para editar, mantén para eliminar"
-            android:textColor="@color/marisol_navy"
+            android:textColor="#3D405B"
             android:textSize="11.5sp"
             android:textStyle="bold" />
 

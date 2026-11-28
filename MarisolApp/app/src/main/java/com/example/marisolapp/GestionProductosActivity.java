@@ -1,7 +1,9 @@
 package com.example.marisolapp;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -9,6 +11,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -40,6 +44,8 @@ public class GestionProductosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gestion_productos);
+
+        configurarBarraEstadoOscura();
 
         db = FirebaseFirestore.getInstance();
 
@@ -74,6 +80,16 @@ public class GestionProductosActivity extends AppCompatActivity {
         btnLimpiar.setOnClickListener(v -> limpiarFormulario());
 
         escucharProductosFirestore();
+    }
+
+    private void configurarBarraEstadoOscura() {
+        Window window = getWindow();
+        window.setStatusBarColor(Color.parseColor("#FFF1DC"));
+        WindowInsetsControllerCompat insetsController =
+                WindowCompat.getInsetsController(window, window.getDecorView());
+        if (insetsController != null) {
+            insetsController.setAppearanceLightStatusBars(true);
+        }
     }
 
     private void guardarOActualizarProducto() {
