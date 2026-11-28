@@ -52,7 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:text="Papelería Marisol • Catálogo en Firestore"
+                    android:text="Papelería Marisol • Catálogo"
                     android:textColor="@color/marisol_peach"
                     android:textSize="11sp" />
             </LinearLayout>
