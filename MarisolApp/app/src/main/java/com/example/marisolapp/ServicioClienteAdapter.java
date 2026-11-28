@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+import java.util.Locale;
 
 public class ServicioClienteAdapter extends RecyclerView.Adapter<ServicioClienteAdapter.ViewHolder> {
 
@@ -31,6 +32,22 @@ public class ServicioClienteAdapter extends RecyclerView.Adapter<ServicioCliente
         Servicio servicio = listaServicios.get(position);
         holder.tvNombre.setText(servicio.getNombre());
         holder.tvDescripcion.setText(servicio.getDescripcion());
+        holder.tvIcono.setText(iconoPara(servicio.getNombre()));
+    }
+
+    // Elige un emoji según el nombre del servicio; si no reconoce ninguno, usa uno genérico.
+    private String iconoPara(String nombre) {
+        if (nombre == null) return "🛠️";
+        String n = nombre.toLowerCase(Locale.ROOT);
+
+        if (n.contains("encuadern")) return "📚";
+        if (n.contains("maquet")) return "🏠";
+        if (n.contains("manualid")) return "✂️";
+        if (n.contains("personaliz")) return "🎁";
+        if (n.contains("impres")) return "🖨️";
+        if (n.contains("lamin")) return "📄";
+        if (n.contains("copia") || n.contains("fotocop")) return "📑";
+        return "🛠️";
     }
 
     @Override
@@ -39,10 +56,11 @@ public class ServicioClienteAdapter extends RecyclerView.Adapter<ServicioCliente
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView tvNombre, tvDescripcion;
+        TextView tvIcono, tvNombre, tvDescripcion;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
+            tvIcono = itemView.findViewById(R.id.tvIconoServicio);
             tvNombre = itemView.findViewById(R.id.tvNombreServicioCliente);
             tvDescripcion = itemView.findViewById(R.id.tvDescripcionServicioCliente);
         }
