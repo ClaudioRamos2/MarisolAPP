@@ -1,10 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GestionProductosActivity">
+    android:background="@color/marisol_cream"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Encabezado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/marisol_navy"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gestión de Productos"
+                android:textColor="@color/marisol_white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Papelería Marisol • Catálogo en Firestore"
+                android:textColor="@color/marisol_peach"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- Tarjeta de formulario -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/marisol_peach"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeColor="@color/marisol_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <EditText
+                    android:id="@+id/etNombreProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/marisol_bg_light"
+                    android:hint="Nombre del producto"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColor="@color/marisol_navy"
+                    android:textColorHint="#7A7E99"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etCategoriaProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/marisol_bg_light"
+                    android:hint="Categoría (ej. Cuadernos, Escritura, Arte)"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColor="@color/marisol_navy"
+                    android:textColorHint="#7A7E99"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etPrecioProducto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/marisol_bg_light"
+                        android:hint="Precio (L.)"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:textColor="@color/marisol_navy"
+                        android:textColorHint="#7A7E99"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/swDisponible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Disponible"
+                        android:textColor="@color/marisol_navy"
+                        android:textSize="12sp"
+                        app:thumbTint="@color/marisol_orange"
+                        app:trackTint="@color/marisol_cream" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etImagenUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/marisol_bg_light"
+                    android:hint="URL de la imagen del producto"
+                    android:inputType="textUri"
+                    android:padding="10dp"
+                    android:textColor="@color/marisol_navy"
+                    android:textColorHint="#7A7E99"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/etDescripcionProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/marisol_bg_light"
+                    android:gravity="top"
+                    android:hint="Descripción breve del producto"
+                    android:inputType="textMultiLine"
+                    android:minLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/marisol_navy"
+                    android:textColorHint="#7A7E99"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnGuardarProducto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/marisol_orange"
+                        android:text="Guardar"
+                        android:textColor="@color/marisol_white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnLimpiarProducto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/marisol_navy"
+                        android:text="Limpiar"
+                        android:textColor="@color/marisol_white" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="6dp"
+            android:text="Productos registrados • Toca para editar, mantén para eliminar"
+            android:textColor="@color/marisol_navy"
+            android:textSize="11.5sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGestionProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</ScrollView>

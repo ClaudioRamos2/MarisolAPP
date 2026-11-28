@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnAccesoAdmin = findViewById(R.id.btnAccesoAdmin);
 
         btnVerProductos.setOnClickListener(v ->
-                startActivity(new Intent(this, ProductosActivity.class)));
+                startActivity(new Intent(this, Productos.class)));
 
         btnVerServicios.setOnClickListener(v ->
                 startActivity(new Intent(this, ServiciosActivity.class)));

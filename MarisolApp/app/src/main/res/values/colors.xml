@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="marisol_white">#FFFFFB</color>
+    <color name="marisol_bg_light">#FFFFFB</color>
     <color name="marisol_cream">#FFF1DC</color>
     <color name="marisol_peach">#FFD2A6</color>
     <color name="marisol_orange">#FF8500</color>
     <color name="marisol_navy">#3D405B</color>
-
-    <!-- Colores auxiliares para estados -->
-    <color name="marisol_available">#2E7D32</color>
-    <color name="marisol_unavailable">#C62828</color>
-    <color name="marisol_border">#E0C9B1</color>
+    <color name="marisol_white">#FFFFFF</color>
+    <color name="marisol_border">#E5C9A8</color>
 </resources>
