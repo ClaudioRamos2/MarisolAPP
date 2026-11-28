@@ -10,31 +10,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="14dp">
+        android:paddingStart="14dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="14dp">
 
-        <!-- Encabezado -->
+        <!-- Encabezado con botón volver -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/marisol_navy"
-            android:orientation="vertical"
-            android:padding="14dp">
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Gestión de Productos"
-                android:textColor="@color/marisol_white"
-                android:textSize="19sp"
-                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/btnVolverProductos"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Volver"
+                android:src="?attr/homeAsUpIndicator"
+                app:tint="@color/marisol_white" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="Papelería Marisol • Catálogo en Firestore"
-                android:textColor="@color/marisol_peach"
-                android:textSize="11sp" />
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gestión de Productos"
+                    android:textColor="@color/marisol_white"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Papelería Marisol • Catálogo en Firestore"
+                    android:textColor="@color/marisol_peach"
+                    android:textSize="11sp" />
+            </LinearLayout>
         </LinearLayout>
 
         <!-- Tarjeta de formulario -->

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -24,6 +25,7 @@ public class GestionProductosActivity extends AppCompatActivity {
 
     private static final String COLECCION_PRODUCTOS = "productos";
 
+    private ImageButton btnVolver;
     private EditText etNombre, etCategoria, etPrecio, etImagenUrl, etDescripcion;
     private SwitchMaterial swDisponible;
     private Button btnGuardar, btnLimpiar;
@@ -41,6 +43,7 @@ public class GestionProductosActivity extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
+        btnVolver = findViewById(R.id.btnVolverProductos);
         etNombre = findViewById(R.id.etNombreProducto);
         etCategoria = findViewById(R.id.etCategoriaProducto);
         etPrecio = findViewById(R.id.etPrecioProducto);
@@ -50,6 +53,8 @@ public class GestionProductosActivity extends AppCompatActivity {
         btnGuardar = findViewById(R.id.btnGuardarProducto);
         btnLimpiar = findViewById(R.id.btnLimpiarProducto);
         rvProductos = findViewById(R.id.rvGestionProductos);
+
+        btnVolver.setOnClickListener(v -> finish());
 
         rvProductos.setLayoutManager(new LinearLayoutManager(this));
         adapter = new ProductoAdapter(listaProductos, new ProductoAdapter.OnProductoClickListener() {
